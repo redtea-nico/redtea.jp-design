@@ -2,10 +2,10 @@
 /**
  * Name       : Habakiri Breadcrumbs
  * Version    : 1.0.1
- * Author     : inc2734
- * Author URI : http://2inc.org
+ * Author     : redtea.jp
+ * Author URI : http://redtea.jp
  * Created    : April 20, 2015
- * Modified   : July 31, 2015
+ * Modified   : March 31, 2020
  * License    : GPLv2 or later
  * License URI: license.txt
  */
@@ -96,7 +96,7 @@ class Habakiri_Breadcrumbs {
 		foreach ( $this->bread_crumb as $_bread_crumb ) {
 			if ( !empty( $_bread_crumb['link'] ) ) {
 				$bread_crumb[] = sprintf(
-					'<a class="bread" href="%s">%s</a>',
+					'<a class="bread" href="%s">%s</a>',/*class="bread"を追加 style.cssでスタイルの変更*/
 					esc_url( $_bread_crumb['link'] ),
 					esc_html( $_bread_crumb['title'] )
 				);
@@ -366,7 +366,7 @@ class Habakiri_Breadcrumbs {
 	 */
 	protected function year( $year ) {
 		if ( get_locale() === 'ja' ) {
-			$year .= '年';
+			$year .= 'å¹´';
 		}
 		return $year;
 	}
@@ -379,7 +379,7 @@ class Habakiri_Breadcrumbs {
 	 */
 	protected function month( $month ) {
 		if ( get_locale() === 'ja' ) {
-			$month .= '月';
+			$month .= 'æœˆ';
 		} else {
 			$monthes = array(
 				1  => 'January',
@@ -408,7 +408,7 @@ class Habakiri_Breadcrumbs {
 	 */
 	protected function day( $day ) {
 		if ( get_locale() === 'ja' ) {
-			$day .= '日';
+			$day .= 'æ—¥';
 		}
 		return $day;
 	}

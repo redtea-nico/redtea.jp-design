@@ -1,10 +1,10 @@
 <?php
 /**
  * Version    : 1.0.1
- * Author     : inc2734
- * Author URI : http://2inc.org
+ * Author     : redtea_rigth
+ * Author URI : https://redtea.jp
  * Created    : April 17, 2015
- * Modified   : August 24, 2015
+ * Modified   : March 24, 2020
  * License    : GPLv2 or later
  * License URI: license.txt
  */
@@ -47,6 +47,6 @@
 	<!-- end #footer --></footer>
 <!-- end #container --></div>
 <?php wp_footer(); ?>
-<?php echo get_post_meta($post->ID, 'article_css', true);?>
+<?php echo get_post_meta($post->ID, 'article_css', true);?><!--追加-->
 </body>
 </html>

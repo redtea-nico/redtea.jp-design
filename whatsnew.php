@@ -3,7 +3,7 @@
  * Template Name: Whats new
  *
  * Version      : 1.0.0
- * Author       : inc2734
+ * Author       : redtea_rigth
  * Author URI   : http://redtea.jp
  * Created      : March 14, 2020
  */

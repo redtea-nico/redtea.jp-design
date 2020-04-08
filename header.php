@@ -1,10 +1,10 @@
 <?php
 /**
- * Version    : 1.2.0
- * Author     : inc2734
- * Author URI : http://2inc.org
+ * Version    : 1.2.1
+ * Author     : redtea.jp
+ * Author URI : https://redtea.jp
  * Created    : April 17, 2015
- * Modified   : August 30, 2015
+ * Modified   : April 7, 2020
  * License    : GPLv2 or later
  * License URI: license.txt
  */
@@ -39,8 +39,20 @@
 				<!-- end .header__col --></div>
 				<div class="col-xs-2 <?php echo esc_attr( $gnav_size ); ?> header__col global-nav-wrapper clearfix">
 					<?php get_template_part( 'modules/gnav' ); ?>
-					<div id="responsive-btn"></div>
+				<!--	<div id="responsive-btn"></div>-->
 				<!-- end .header__col --></div>
+				<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div><div class="overlay" id="overlay"><nav class="overlay-menu">
+						<ul>
+							<li><a href="https://redtea.jp">Home</a></li>
+							<li><a href="https://redtea.jp/about">About</a></li>
+							<li><a href="https://redtea.jp/blog">Blog</a></li>
+							<li><a href="https://redtea.jp/accounts">Account</a></li>
+							<li><a href="https://redtea.jp/contacts">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+				<script id="rendered-js">$('#toggle').click(function () {$(this).toggleClass('active');$('#overlay').toggleClass('open');$('#toggle').toggleClass('open');});</script>
 			<!-- end .row --></div>
 		<!-- end .container --></div>
 		<?php do_action( 'habakiri_after_header_content' ); ?>
