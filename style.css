@@ -43,8 +43,12 @@ h2.sidebar-widget__title.h4{color:#cc3030;}
 
 @font-face {font-family: "Font Awesome 5 Brands Reguler";src: url(./fontawesome-webfont.woff2);}
 .social-nav ul li a[href*="best-friends.chat"]:before {font-family:"Font Awesome 5 Brands Reguler";font-weight: 400;content: '\f4f6'; }
-@font-face {font-family: "icomoon";src: url(./icomoon.woff);}
-.social-nav ul li a[href*="nicovideo.jp"]:before {font-family:"icomoon";font-size: 100%;vertical-align: top;content: '\e900';}
+
+@font-face {font-family: "icomoon";src: url(./icomoon.woff);font-weight: normal;font-style: normal;font-display: block;}
+#menu-item-217{font-family: 'icomoon' !important;speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+.social-nav ul li a[href*="nicovideo.jp"]:before {font-family:'icomoon';font-size:100%;vertical-align:top;content:'\e901';}
+
+.btn-blog{background-color:rgba(0,0,0,0);color:#ffffff;}.btn-blog:hover{background-color:rgba(0,0,0,0);color:#cc3030;}
 
 .google_map {position: relative;padding-bottom: 56.25%;padding-top: 30px;height: 0;overflow: hidden;}
 .google_map iframe,.google_map object,.google_map embed {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
