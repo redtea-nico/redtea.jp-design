@@ -43,6 +43,14 @@ h2.sidebar-widget__title.h4{color:#cc3030;}
 
 @font-face {font-family: "Font Awesome 5 Brands Reguler";src: url(./fontawesome-webfont.woff2);}
 .social-nav ul li a[href*="best-friends.chat"]:before {font-family:"Font Awesome 5 Brands Reguler";font-weight: 400;content: '\f4f6'; }
+.social-nav ul li a[href*="keybase.io"]:before {font-family:"Font Awesome 5 Brands Reguler";font-weight: 400;content: '\f4f5'; }
+
+.twitter:before {font-family: "Font Awesome 5 Brands Reguler";font-weight: 400;content: '\f099';color: #1DA1F2;}
+.mastodon:before {font-family:"Font Awesome 5 Brands Reguler";font-weight: 400;content: '\f4f6';color: #2B90D9;}
+.flickr:before {font-family:"Font Awesome 5 Brands Reguler";font-weight: 400;content: '\f16e';}
+.discord:before {font-family:"Font Awesome 5 Brands Reguler";font-weight: 400;content: '\f392';color: #7289da;}
+.github:before {font-family:"Font Awesome 5 Brands Reguler";font-weight: 400;content: '\f09b';}
+.keybase:before {font-family:"Font Awesome 5 Brands Reguler";font-weight: 400;content: '\f4f5';}
 
 @font-face {font-family: "icomoon";src: url(./icomoon.woff);font-weight: normal;font-style: normal;font-display: block;}
 #menu-item-217{font-family: 'icomoon' !important;speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
@@ -58,7 +66,7 @@ h2.sidebar-widget__title.h4{color:#cc3030;}
 	.button_container.active .top {-webkit-transform: translateY(11px) translateX(0) rotate(45deg);transform: translateY(11px) translateX(0) rotate(45deg);background: #CC3030;}
 	.button_container.active .middle {opacity: 0;background: #CC3030;}
 	.button_container.active .bottom {-webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);transform: translateY(-11px) translateX(0) rotate(-45deg);background: #CC3030;}
-	.button_container span {background: #000;border: none;height: 4px;width: 100%;position: absolute;top: 0;left: 0;-webkit-transition: all .35s ease;transition: all .35s ease;cursor: pointer;}
+	.button_container span {background: #000;border: none;height: 2px;width: 100%;position: absolute;top: 0;left: 0;-webkit-transition: all .35s ease;transition: all .35s ease;cursor: pointer;}
 	.button_container span:nth-of-type(2) {top: 11px;}
 	.button_container span:nth-of-type(3) {top: 22px;}
 	.button_container.open {position: fixed;top: 9vh;right: 2%;}
